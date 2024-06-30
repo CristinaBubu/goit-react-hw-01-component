@@ -1,6 +1,5 @@
 import React from 'react';
 import css from './Profile.module.css';
-import { AiOutlineEnvironment } from 'react-icons/ai';
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
@@ -10,10 +9,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
         <h2 className={css.name}>{username}</h2>
         <p className={css.tag}>{tag}</p>
         <div className={css.backgroundImage}>
-          <p className={css.location}>
-            <AiOutlineEnvironment />
-            {location}
-          </p>
+          <p className={css.location}>{location}</p>
         </div>
       </div>
       <ul className={css.stats}>
